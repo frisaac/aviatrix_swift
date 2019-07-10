@@ -7,26 +7,37 @@
 //
 
 import Foundation
-
+var running = false
+var author = " "
 class Aviatrix {
-    
-    func start() -> Bool {
-        return true
+   
+    init(authorInit : String)
+    {
+        author = authorInit
+    }
+    func start() -> Bool
+    {
+        running = true
+        return running
     }
     
-    func refuel() {
+    func refuel()
+    {
         
     }
     
-    func flyTo(destination : String) {
+    func flyTo(destination : String)
+    {
         
     }
     
-    func distanceTo(target : String) {
+    func distanceTo(target : String)
+    {
     
     }
     
-    func knownDestinations() -> [String] {
+    func knownDestinations() -> [String]
+    {
        return ["St. Louis"]
     }
 }
